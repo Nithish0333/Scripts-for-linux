@@ -30,6 +30,22 @@ while true; do
             echo "AskkiBot: Goodbye! It was nice chatting with you!"
             break
             ;;
+        "update"|"upgrade"|"system update"|"system upgrade")
+        echo "****system is updating****"
+        sleep 2
+        echo "***...........'"
+        sleep 1
+        echo "*****........."
+        sleep 1
+        echo "********......"
+        sleep 1
+        echo "**************"
+        $sudo apt update && upgrade -y
+
+        echo "*****system was updated successfully*****"
+        sleep 1
+        echo "WELCOME BACK CHIEF"
+        ;;
         *)
             echo "AskkiBot: I'm not sure how to respond to that. Type 'help' for assistance."
             ;;
