@@ -40,7 +40,7 @@ while true; do
         echo "********......"
         sleep 1
         echo "**************"
-        $sudo apt update && upgrade -y
+        sudo apt update && upgrade -y
 
         echo "*****system was updated successfully*****"
         sleep 1
