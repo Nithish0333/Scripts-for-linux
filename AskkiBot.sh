@@ -49,5 +49,10 @@ while true; do
         *)
             echo "AskkiBot: I'm not sure how to respond to that. Type 'help' for assistance."
             ;;
+          "ls"|"list"|"lsit")
+          sleep 1
+            echo "listing the files"
+            ls
+            ;;
     esac
 done
