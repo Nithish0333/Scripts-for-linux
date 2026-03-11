@@ -1,0 +1,6 @@
+import os
+
+command=input("Enter command:")
+
+if command=="open firefox":
+    os.system("firefox")
