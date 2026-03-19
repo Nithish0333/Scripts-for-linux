@@ -1,0 +1,13 @@
+import os
+import time
+
+path = "/tmp"
+days = 7
+now = time.time()
+
+for file in os.listdir(path):
+    full_path = os.path.join(path, file)
+    
+    if os.stat(full_path).st_mtime < now - days * 86400:
+        os.remove(full_path)
+        print("Deleted:", file)
